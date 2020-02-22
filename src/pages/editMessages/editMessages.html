@@ -1,0 +1,132 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Bearbeiten der Nachricht:
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-row>
+    <ion-col col-5>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Ihre Nachricht beinhaltet folgende Variablen und Regeln: </ion-card-title>
+        </ion-card-header>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H1-N1-V1]
+              $participantEmotion
+            </ion-card-content>
+            <button ion-button small block (click)="openEditVariables()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H1-N1-V2]
+              $participantHelpNeeded
+            </ion-card-content>
+            <button ion-button small block (click)="openEditVariables()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              $participantHelpNeeded: yes
+              $participantHelpNotNeeded: no
+            </ion-card-content>
+            <button ion-button small block (click)="openEditVariables()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col>
+            <button ion-button small block color="secondary">Bestätigen</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col col-7>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Folgende Komponente stehen Ihnen zusätzlich zur Verfügung:</ion-card-title>
+        </ion-card-header>
+        <ion-row>
+          <ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N1-V3]
+                  $helpIfNeeded
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N1-V4]
+                  $helpToRelax
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N1-V5]
+                  $additionalHelp
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N1-V6]
+                  $helpFromParticipants
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N1-V7]
+                  $helpFromTherapists
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N1-V8]
+                  $helpForSports
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N1-V9]
+                  $cookingHelp
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N1-V10]
+                  $helpToBreathe
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-col>
+          <ion-col>
+            <ion-card color="primary">
+              <ion-card-content style="font-weight: bold;">
+                $helpToBreathe blockiert den weiteren Verlauf, wenn mit "ja" beantwortet
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

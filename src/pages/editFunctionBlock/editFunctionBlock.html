@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Bearbeiten des Funktionsbausteins:
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-row>
+    <ion-col col-5>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Ihr Funktionsbaustein beinhaltet folgende Mikrodialoge und Regeln: </ion-card-title>
+        </ion-card-header>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H1]
+              Hilfestellungen bei Situationen des Rauchdrangs<br />
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMicroDialog()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H2] Bereitstellung von Tipps, um umweltbedingte und soziale Reize auf das Rauchen zu vermeiden<br />
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMicroDialog()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H3] Hilfestellungen zu Stressmanagement<br />
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMicroDialog()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="primary">
+            <ion-card-content>
+              Wenn Mikrodialog [H3] abgeschlossen, <br />
+              Mikrodialog [XY] starten
+            </ion-card-content>
+            <button ion-button small block (click)="openEditRule()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col>
+            <button ion-button small block color="secondary">Bestätigen</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col col-7>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Folgende Komponente stehen Ihnen zusätzlich zur Verfügung:</ion-card-title>
+        </ion-card-header>
+        <ion-row>
+          <ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H4] Hilfestellungen zu Entzugserscheinungen, Depressionen, Angst
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H5] Hilfestellungen bei der Rauchentwöhnung
+                  Hilfestellungen bei Rückfällen
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H6] Hilfestellungen bei Rückfällen
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-col>
+          <ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn Mikrodialog [XY] erfolgreich abgeschlossen, Mikrodialog [AB] zur gleichen Zeit, wie [CD] starten
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

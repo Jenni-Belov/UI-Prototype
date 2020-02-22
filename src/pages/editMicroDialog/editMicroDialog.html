@@ -1,0 +1,152 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Bearbeiten des Mikrodialoges:
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-row>
+    <ion-col col-5>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Ihr Mikrodialog beinhaltet folgende Nachrichten und Regeln: </ion-card-title>
+        </ion-card-header>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H1-N1]
+              "Hier ist eine kleine Atemübung für dich zum Ausprobieren:
+              Setze dich hin und schließe deine Augen. Lass deine Muskeln entspannen. Lass deine Schultern hängen. Zähle
+              bis 4 während du langsam und tief durch die Nase einatmest. Zähle bis 4 während du langsam durch den Mund
+              ausatmest. Lass deinen Körper erschlaffen."
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMessages()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H1-N2]
+              Schaffe dir eine rauchfreie Atmosphäre, indem du Lokale vermeidest, in denen es keine rauchfreien Zonen
+              gibt.
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMessages()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H1-N3] Hier ist eine kleine Atemübung für dich zum Ausprobieren: Mache fünf tiefe Atemzüge und entspanne
+              ein paar Minuten. Wahrscheinlich ist das Verlangen nach einer Zigarette dann nicht mehr so stark wie
+              vorher
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMessages()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H1-N4] Tipp bei erhöhter Reizbarkeit und Frustration: Informiere dein persönliches Umfeld über deine
+              Rauchentwöhnung und bitte sie um Verständnis.
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMessages()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              [H1-N5] Tipp bei erhöhter Reizbarkeit und Frustration: Sport. Dabei kannst du dich abreagieren und
+              schüttest Glückshormone aus.
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMessages()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="primary">
+            <ion-card-content style="font-weight: bold;">
+              Wenn Nachricht [XY-XYZ] mit $participantIsRelaxed beantwortet, starte Nachricht [XY-ABC]
+            </ion-card-content>
+            <button ion-button small block (click)="openEditRules()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col>
+            <button ion-button small block color="secondary">Bestätigen</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col col-7>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Folgende Komponente stehen Ihnen zusätzlich zur Verfügung:</ion-card-title>
+        </ion-card-header>
+        <ion-row>
+          <ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N6] Tipp bei erhöhter Reizbarkeit und Frustration: Erlerne eine Entspannungsübung, die du
+                  regelmäßig durchführen kannst.
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N7] Tipp bei Müdigkeit und Abgespanntheit: Gönne dir in der nächsten Zeit etwas mehr Schlaf.
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N8] Tipp bei Müdigkeit und Abgespanntheit: Mache eine kleine Pausen an der frischen Luft oder
+                  zumindest am offenen Fenster.
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N9] Tipp bei gesteigertem Appetit: Halten dir Rohkost und Obst bereit.
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N10] Tipp bei Müdigkeit und Abgespanntheit: Bewegung und Entspannung. Mache einen Spaziergang und
+                  lege dich danach in die Badewanne.
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N11] Tipp bei starkem Rauchverlangen: Lenke dich ab und vermeide typische Rauchsituationen.
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-content style="font-weight: bold;">
+                  [H1-N12] Tipp bei starkem Rauchverlangen: Bewegung, Bewegung, Bewegung: Plane mehrere leichte
+                  Trainingseinheiten in deine Woche ein. Selbst kurze Spaziergänge helfen schon gegen das Verlangen.
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-col>
+          <ion-col>
+            <ion-card color="primary">
+              <ion-card-content style="font-weight: bold;">
+                Die Nachricht [XY-XYZ] muss vom Nutzer beantwortet werden, bevor [ABC-ABD] gesendet wird.
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Bearbeiten der Regel:
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-row>
+    <ion-col col-5>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Ihre Regel:</ion-card-title>
+        </ion-card-header>
+        <ion-col>
+          <ion-card color="test5">
+            <ion-card-content>
+              Starte Funktionsbaustein XY, nach dem Funktionsbaustein XYZ
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col>
+            <button ion-button small block color="primary" (click)="openEdit()">Bearbeiten</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button small block color="secondary">Bestätigen</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col col-7>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Beispiel-Regeln:</ion-card-title>
+        </ion-card-header>
+        <ion-row>
+          <ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn Funktionsbaustein XY abgearbeitet, starte je nach Erfolg Funktionsbaustein XY
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn während des Funktionsbausteins QWZ passiert, beginne umgehend mit dem Funktionsbaustein UVW
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Solange Funktionsbaustein ABC durchläuft, beginne parallel mit Funktionsbaustein ABCD
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Merke, zu welcher Zeit Funktionsbaustein XY abgeschlossen wird <br />
+                  Zur gleichen Zeit soll Funktionsbaustein ABC ebenfalls abgeschlossen sein
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

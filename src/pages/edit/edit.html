@@ -1,0 +1,246 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Bearbeiten des Programms:
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h1>
+    Verschieben Sie die Reihenfolge der Funktionsbausteine oder Regeln per "drag and drop". <br />
+    Entfernen Sie unnötige Komponente oder fügen Sie neue hinzu:
+  </h1>
+  <ion-row>
+    <ion-col col-7>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Ihr Programm:</ion-card-title>
+        </ion-card-header>
+        <ion-col>
+          <ion-card color="test3">
+            <ion-card-header>
+              <ion-card-title text-wrap>Baustein: Motivation</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Aufforderung zur Erfassung des Abhängigkeitslevels [M5]<br />
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card color="primary">
+              <ion-card-content>
+                Wenn Abhängigkeitslevel hoch: <br />
+                Funktionsbaustein Hilfestellungen
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card color="primary">
+              <ion-card-content>
+                Wenn Abhängigkeitslevel mittel: <br />
+                Funktionsbaustein Unterstützung
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card color="primary">
+              <ion-card-content>
+                Wenn Abhängigkeitslevel niedrig: <br />
+                Funktionsbaustein Motivation
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4>
+            <ion-card color="test1">
+              <ion-card-header>
+                <ion-card-title text-wrap>Baustein: Hilfestellungen</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Hilfestellungen bei Situationen des Rauchdrangs [H1] <br />
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-4>
+            <ion-card color="test2">
+              <ion-card-header>
+                <ion-card-title text-wrap>Baustein: Unterstützung</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Austausch der Themen mit anderen Schwangeren [U7]
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-4>
+            <ion-card color="test3">
+              <ion-card-header>
+                <ion-card-title text-wrap>Baustein: Motivation</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Ermittlung der Ursachen / Identifizierung der Probleme [M7-M9] <br />
+                Feedback zur Leistung des gewählten Verhalten anbieten [M11]<br />
+                Loben der Teilnehmer für Fortschritte bei der Verhaltensänderung [M17a]<br />
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-col>
+          <ion-card color="primary">
+            <ion-card-content>
+              Wenn Funktionsbaustein Motivation abgearbeitet, zum Baustein Informationen übergehen
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card color="test4">
+              <ion-card-header>
+                <ion-card-title text-wrap>Baustein: Informationen</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Informationsgabe über Reize und soziale Situationen, die den Drang zum Rauchen auslösen können
+                [I1]<br />
+                Aufklärung über Fakten und Fiktion [I5-I15]<br />
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <button ion-button small block color="secondary">Bestätigen</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col col-5>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Komponente:</ion-card-title>
+        </ion-card-header>
+        <ion-row>
+          <ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn XY: <br />
+                  Funktionsbaustein XY
+                </ion-card-content>
+                <button ion-button small block (click)="openEditRule()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn XY: <br />
+                  Funktionsbaustein XY
+                </ion-card-content>
+                <button ion-button small block (click)="openEditRule()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn XY: <br />
+                  Funktionsbaustein XY
+                </ion-card-content>
+                <button ion-button small block (click)="openEditRule()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn XY: <br />
+                  Funktionsbaustein XY
+                </ion-card-content>
+                <button ion-button small block (click)="openEditRule()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn XY: <br />
+                  Funktionsbaustein XY
+                </ion-card-content>
+                <button ion-button small block (click)="openEditRule()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn XY: <br />
+                  Funktionsbaustein XY
+                </ion-card-content>
+                <button ion-button small block (click)="openEditRule()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="primary">
+                <ion-card-content>
+                  Wenn XY: <br />
+                  Funktionsbaustein XY
+                </ion-card-content>
+                <button ion-button small block (click)="openEditRule()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+          </ion-col>
+          <ion-col>
+            <ion-col>
+              <ion-card color="test1">
+                <ion-card-header>
+                  <ion-card-title  text-wrap>Baustein: Hilfestellungen</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Hilfestellungen bei Situationen des Rauchdrangs [H1] <br />
+                  Bereitstellung von Tipps, um umweltbedingte und soziale Reize auf das Rauchen zu vermeiden [H2]<br />
+                  Hilfestellungen zu Stressmanagement [H3]<br />
+                </ion-card-content>
+                <button ion-button small block (click)="openEditFunctionBlock()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test2">
+                <ion-card-header>
+                  <ion-card-title text-wrap>Baustein: Unterstützung</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Austausch der Themen mit anderen Schwangeren [U7]
+                </ion-card-content>
+                <button ion-button small block (click)="openEditFunctionBlock()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test3">
+                <ion-card-header>
+                  <ion-card-title text-wrap>Baustein: Motivation</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Aufforderung der Teilnehmer zu notieren, wie viele Zigaretten sie jeden Tag rauchen [M1-M3]<br />
+                  Aufforderung zur Erfassung des Abhängigkeitslevels [M5]<br />
+                  Ermittlung der Ursachen / Identifizierung der Probleme [M7-M9] <br />
+                  Feedback zur Leistung des gewählten Verhalten anbieten [M11]<br />
+                  Loben der Teilnehmer für Fortschritte bei der Verhaltensänderung [M17a]<br />
+                </ion-card-content>
+                <button ion-button small block (click)="openEditFunctionBlock()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card color="test4">
+                <ion-card-header>
+                  <ion-card-title text-wrap>Baustein: Informationen</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Informationsgabe über Reize und soziale Situationen, die den Drang zum Rauchen auslösen können
+                  [I1]<br />
+                  Aufklärung über Fakten und Fiktion [I5-I15]<br />
+                </ion-card-content>
+                <button ion-button small block (click)="openEditFunctionBlock()" color="primary">Bearbeiten</button>
+              </ion-card>
+            </ion-col>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

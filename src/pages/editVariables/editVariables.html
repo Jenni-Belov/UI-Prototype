@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Bearbeiten der Variable:
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-row>
+    <ion-col col-4>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Variable beinhaltet folgenden Antworttyp: </ion-card-title>
+        </ion-card-header>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              Number
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMicroDialog()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col>
+            <button ion-button small block color="primary" (click)="openEdit()">Bearbeiten</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button small block color="secondary">Bestätigen</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col col-4>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Variable speichert folgendende Werte: </ion-card-title>
+        </ion-card-header>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              0-3; 3-7; 7-10
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMicroDialog()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col>
+            <button ion-button small block color="primary" (click)="openEdit()">Bearbeiten</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button small block color="secondary">Bestätigen</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col col-4>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title text-wrap>Variable beinhaltet folgende Antwortmöglichkeiten: </ion-card-title>
+        </ion-card-header>
+        <ion-col>
+          <ion-card color="test1">
+            <ion-card-content style="font-weight: bold;">
+              participantEmotionLow, participantEmotionNormal, participantEmotionHigh
+            </ion-card-content>
+            <button ion-button small block (click)="openEditMicroDialog()" color="primary">Bearbeiten</button>
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col>
+            <button ion-button small block color="primary" (click)="openEdit()">Bearbeiten</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button small block color="secondary">Bestätigen</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
